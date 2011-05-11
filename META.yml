@@ -1,0 +1,28 @@
+---
+abstract: 'Interface to Google Page Speed Online API.'
+author:
+  - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
+build_requires:
+  Data::Validate::URI: 0.05
+  HTTP::Request: 1.40
+  JSON: 2.15
+  LWP::UserAgent: 2.33
+  Moose: 0.89
+  Moose::Util::TypeConstraints: 0.89
+  Readonly: 0
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: WWW-Google-PageSpeedOnline
+provides:
+  WWW::Google::PageSpeedOnline:
+    file: lib/WWW/Google/PageSpeedOnline.pm
+    version: 0.01
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

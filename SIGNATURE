@@ -1,0 +1,39 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 4e7ebf6588a4a4c7a8b3cee0725f23a5d2937d1b Build.PL
+SHA1 48887dc02c1c289312a6a067a68615d0f5640181 Changes
+SHA1 9d4a1994a13d48517bfba3d2a53d48e23a412979 MANIFEST
+SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
+SHA1 46df0947146781f1e577e22f3353c41bee8ae63d META.yml
+SHA1 43d2ca2ded25f4b61bc3f4b85e997957d4fb9194 Makefile.PL
+SHA1 5a53927add9ee1745af9ace2b0d06d3863abcbf0 README
+SHA1 cf787ea884ab5643f2303c4724b2d5e8a65f3bf2 lib/WWW/Google/PageSpeedOnline.pm
+SHA1 c079e26afc3326e127eb15d044bac5ad8c169b78 t/00-load.t
+SHA1 e60c8879da30021331b28f5d7f9c3f0d1f4a0499 t/01-unit-test.t
+SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
+SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (MingW32)
+
+iQEcBAEBAgAGBQJNyrWFAAoJEPYcXBXhRYOho58H/Aqy+AC+qNupxeJCqUjP75Mc
+DIezIvJ3dXEipnHZ9+0reLFWOyIdZkKbl7/m7eR798NArEZ9arqj9fRHFOquBgfs
+/EgtXT4zLw04rBKrHKec1sa4fgPHREKMDPlyATJ8KOGfx8hfdW/OIfjcUjqVe1Mw
+MEwudCTWWvyn8F/bihJTPJT1OnnCd4WymfW9FzkPLds9n7SINttSMk+rsngpoBgi
+wTeiIBvFOM3iOd88G2X3rYlb6j661kKHumrzmpwQsoY4FTvwjqRPB3EPP3L7Vi3c
+LZ/xj4o4Zcc1kaWr+RSioNdqHoxxTlusq4ia4ln3nX84wdBjcSRxnBP1J/azeiw=
+=q/0e
+-----END PGP SIGNATURE-----
