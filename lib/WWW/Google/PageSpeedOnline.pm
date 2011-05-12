@@ -1,17 +1,17 @@
 package WWW::Google::PageSpeedOnline;
 
-use Carp;
-use Data::Dumper;
-
 use Moose;
 use Moose::Util::TypeConstraints;
+use namespace::clean;
+
+use Carp;
+use Data::Dumper;
 
 use JSON;
 use Readonly;
 use HTTP::Request;
 use LWP::UserAgent;
 use Data::Validate::URI qw/is_web_uri/;
-use namespace::clean;
 
 =head1 NAME
 
@@ -19,11 +19,11 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 Readonly my $API_VERSION => 'v1';
 Readonly my $BASE_URL    => "https://www.googleapis.com/pagespeedonline/$API_VERSION/runPagespeed";
 Readonly my $DEFAULT_STRATEGY => 'desktop';

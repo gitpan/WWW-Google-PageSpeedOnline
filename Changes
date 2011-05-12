@@ -1,5 +1,8 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.04    Thu May 12 16:51:02 2011
+        - Importing Moose and its family first.
+
 0.03    Thu May 12 13:12:11 2011
         - Made the packge immutable.
 
