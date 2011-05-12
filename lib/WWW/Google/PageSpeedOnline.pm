@@ -1,7 +1,5 @@
 package WWW::Google::PageSpeedOnline;
 
-use strict;use warnings;
-
 use Carp;
 use Data::Dumper;
 
@@ -13,6 +11,7 @@ use Readonly;
 use HTTP::Request;
 use LWP::UserAgent;
 use Data::Validate::URI qw/is_web_uri/;
+use namespace::clean;
 
 =head1 NAME
 
@@ -20,11 +19,11 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 Readonly my $API_VERSION => 'v1';
 Readonly my $BASE_URL    => "https://www.googleapis.com/pagespeedonline/$API_VERSION/runPagespeed";
 Readonly my $DEFAULT_STRATEGY => 'desktop';
@@ -667,5 +666,7 @@ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
 See http://dev.perl.org/licenses/ for more information.
 
 =cut
+
+no Moose; # keywords are removed from the WWW::Google::PageSpeedOnline package
 
 1; # End of WWW::Google::PageSpeedOnline

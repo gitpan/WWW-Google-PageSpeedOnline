@@ -11,12 +11,13 @@ WriteMakefile(
     PREREQ_PM     => {
         'Test::More' => 0,
         'Readonly'   => 0,
-        'Moose'      => '0.89',
+        'Moose'      => '2.0006',
         'JSON'       => '2.15',
         'HTTP::Request'  => '1.40',
         'LWP::UserAgent' => '2.33',
         'Data::Validate::URI' => '0.05',
-        'Moose::Util::TypeConstraints' => '0.89',
+        'namespace::clean'    => '0.20',
+        'Moose::Util::TypeConstraints' => '2.0006',
     },
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
       ? ('LICENSE'=> 'perl')

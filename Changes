@@ -1,4 +1,10 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.02    Thu May 12 09:32:19 2011
+        - Added namespace::clean to the pre-requisite list of modules in Build.PL and Makefile.PL.
+        - Removed 'use strict; use warnings;' as 'use Moose;' gets that by default.
+        - Up the version of Moose and Moose::Util::TypeConstraints to 2.006.
+        - Added no Moose; to remove keywords it export.
+
 0.01    Wed May 11 10:43:01 2011
         - First version, released.
