@@ -1,5 +1,8 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.03    Thu May 12 13:12:11 2011
+        - Made the packge immutable.
+
 0.02    Thu May 12 09:32:19 2011
         - Added namespace::clean to the pre-requisite list of modules in Build.PL and Makefile.PL.
         - Removed 'use strict; use warnings;' as 'use Moose;' gets that by default.

@@ -19,11 +19,11 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 Readonly my $API_VERSION => 'v1';
 Readonly my $BASE_URL    => "https://www.googleapis.com/pagespeedonline/$API_VERSION/runPagespeed";
 Readonly my $DEFAULT_STRATEGY => 'desktop';
@@ -667,6 +667,7 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
-no Moose; # keywords are removed from the WWW::Google::PageSpeedOnline package
+__PACKAGE__->meta->make_immutable;
+no Moose; # Keywords are removed from the WWW::Google::PageSpeedOnline package
 
 1; # End of WWW::Google::PageSpeedOnline
