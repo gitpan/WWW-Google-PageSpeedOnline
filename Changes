@@ -1,10 +1,13 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.05    Fri May 13 17:58:21 2011
+        - Added DISCLAIMER section to the pod.
+
 0.04    Thu May 12 16:51:02 2011
         - Importing Moose and its family first.
 
 0.03    Thu May 12 13:12:11 2011
-        - Made the packge immutable.
+        - Made the package immutable.
 
 0.02    Thu May 12 09:32:19 2011
         - Added namespace::clean to the pre-requisite list of modules in Build.PL and Makefile.PL.

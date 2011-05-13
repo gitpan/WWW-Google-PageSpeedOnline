@@ -19,11 +19,11 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 Readonly my $API_VERSION => 'v1';
 Readonly my $BASE_URL    => "https://www.googleapis.com/pagespeedonline/$API_VERSION/runPagespeed";
 Readonly my $DEFAULT_STRATEGY => 'desktop';
@@ -202,10 +202,10 @@ change unexpectedly until it graduates.
 
 =cut
 
-type 'true_false' => where { $_ =~ m(^\btrue\b|\bfalse\b$)i };
-has 'api_key'     => (is => 'ro', isa => 'Str', required => 1);
-has 'browser'     => (is => 'rw', isa => 'LWP::UserAgent', default => sub { return LWP::UserAgent->new(); });
-has 'prettyprint' => (is => 'rw', isa => 'true_false', default => 'true');
+type 'true_false'  => where { $_ =~ m(^\btrue\b|\bfalse\b$)i };
+has  'api_key'     => (is => 'ro', isa => 'Str', required => 1);
+has  'browser'     => (is => 'rw', isa => 'LWP::UserAgent', default => sub { return LWP::UserAgent->new(); });
+has  'prettyprint' => (is => 'rw', isa => 'true_false', default => 'true');
 
 around BUILDARGS => sub 
 {
@@ -664,6 +664,11 @@ This  program  is  distributed  in  the hope that it will be useful, but WITHOUT
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 See http://dev.perl.org/licenses/ for more information.
+
+=head1 DISCLAIMER
+
+This  program  is  distributed in the hope that it will be useful,  but  WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 =cut
 
