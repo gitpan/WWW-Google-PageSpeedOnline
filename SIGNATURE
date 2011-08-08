@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 03ea244eb4db122ce71f4f67188aa9c6169bc34d Build.PL
-SHA1 85cf47825e0c64e71bb065a67436785baae9450d Changes
+SHA1 db7a4434d6fb9dec959fcb450678157606f2b465 Build.PL
+SHA1 54a92924e90437f9030ec54b535a51039c06ebd1 Changes
 SHA1 9d4a1994a13d48517bfba3d2a53d48e23a412979 MANIFEST
 SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 70b63fef8795c179c4448a3bf0dd44b1274bbe6d META.yml
-SHA1 24451260f7e76716cd4875894d383b721e574276 Makefile.PL
+SHA1 f54735f9507f56c7af3c23070d721a1ea7e8dcda META.yml
+SHA1 8926c659f53b6a2ef9e4091843a84f63cbf7d062 Makefile.PL
 SHA1 5a53927add9ee1745af9ace2b0d06d3863abcbf0 README
-SHA1 4079d05e223f736eeeca2d377fac95a67929769c lib/WWW/Google/PageSpeedOnline.pm
+SHA1 2f940cffc615fcc9e7613e13c9c4fb0fd1060b9e lib/WWW/Google/PageSpeedOnline.pm
 SHA1 c079e26afc3326e127eb15d044bac5ad8c169b78 t/00-load.t
 SHA1 e60c8879da30021331b28f5d7f9c3f0d1f4a0499 t/01-unit-test.t
 SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
@@ -29,11 +29,11 @@ SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.14 (MingW32)
 
-iQEcBAEBAgAGBQJN1OrMAAoJEPYcXBXhRYOhefIIAJGvnkUED+O7rJVjfgmLaVAG
-Ff+VL5cZ0paoI1JdrtqtEfXdEbaxe4au3wCTk074lfYTnAdHmN00XmJ352hc7Pjt
-s7p0Y648N9e7hWlAn76atVhFb3kTFdpiEmSw4JIpSz/wX7O5WyWfZBjR6BpyTRay
-F2HvTPXBq47kACwUOW3EfIs5zIdPcJSKrHudekMw+T5wKM4q6s9uWI15t7mEJcui
-MiGsVsT/8z/unHsls3QTPYNNp4b6RNT/Z7CfVVhdPhWFHFypaexQIMPaVXwPQ0aQ
-26PI5bnGd0Gn9XRZ6ImyrCBedYeXInV08LbUEqQnhR+572tKuJVppqnsNPpYO1w=
-=gjIU
+iQEcBAEBAgAGBQJOP88rAAoJEPYcXBXhRYOhO2IH/2OrMU6/WWh1b7LrDTApDx05
+XArKXYM+9dj6QZJcAdra0Y+uaaZudBnpxWt1Ts6zxFWFOXOfCpYISf65LvS6c6Ak
+OMpmQdRp2RVBIEeW8KO2kHSOnwZ+3avH9o6+i04KuEpMHJeFNWQ+E/fA1O6fAH3I
+vUQAbd7qUrll0YY82XPWzpZyKJ2r67HFv+THFDgLIn69PkQ8bhobsvWRSW2Pq/MV
+XD8wG4if4hYwaFfkC9b3OtRDI3x9bVtRcrI45ahTOap/SOLOY6H0QE1GLpTL5Z7Q
+TQGa5qojKKTMyb1PvTEejo08FI1Ky0t0/bdt6/ZEPxraVaTU611Ub3+PUmJRmNA=
+=zh67
 -----END PGP SIGNATURE-----

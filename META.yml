@@ -9,7 +9,7 @@ build_requires:
   LWP::UserAgent: 2.33
   Moose: 2.0006
   Moose::Util::TypeConstraints: 2.0006
-  Readonly: 0
+  Readonly: 1.03
   Test::More: 0
   namespace::clean: 0.20
 configure_requires:
@@ -23,7 +23,7 @@ name: WWW-Google-PageSpeedOnline
 provides:
   WWW::Google::PageSpeedOnline:
     file: lib/WWW/Google/PageSpeedOnline.pm
-    version: 0.06
+    version: 0.07
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.06
+version: 0.07
