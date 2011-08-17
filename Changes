@@ -1,5 +1,10 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.08    Wed Aug 17 09:53:11 2011
+        - Fixed method _get_url() to add URL.
+        - Fixed the typo in the default locale and others in the list of all
+          supported locales.
+
 0.07    Mon Aug 08 12:56:11 2011
         - Made Readonly v1.03 as minimum requirement.
         - Prepared the distribution using the Module::Signature v0.68.

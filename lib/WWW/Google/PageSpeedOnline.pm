@@ -19,15 +19,15 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.07
+Version 0.08
 
 =cut
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 Readonly my $API_VERSION => 'v1';
 Readonly my $BASE_URL    => "https://www.googleapis.com/pagespeedonline/$API_VERSION/runPagespeed";
 Readonly my $DEFAULT_STRATEGY => 'desktop';
-Readonly my $DEFAULT_LOCALE   => 'en-US';
+Readonly my $DEFAULT_LOCALE   => 'en_US';
 Readonly my $STRATEGIES  => {'desktop' => 1, 'mobile' => 1};
 Readonly my $RULES       => 
 {
@@ -63,14 +63,14 @@ Readonly my $LOCALES     =>
     'ar'    => 'Arabic',
     'bg'    => 'Bulgarian',
     'ca'    => 'Catalan',                       
-    'zh-TW' => 'Traditional Chinese (Taiwan)',
-    'zh-CN' => 'Simplified Chinese',
+    'zh_TW' => 'Traditional Chinese (Taiwan)',
+    'zh_CN' => 'Simplified Chinese',
     'fr'    => 'Croatian',
     'cs'    => 'Czech',
     'da'    => 'Danish',
     'nl'    => 'Dutch',
-    'en-US' => 'English',
-    'en-GB' => 'English UK',
+    'en_US' => 'English',
+    'en_GB' => 'English UK',
     'fil'   => 'Filipino',
     'fi'    => 'Finnish',
     'fr'    => 'French',
@@ -87,8 +87,8 @@ Readonly my $LOCALES     =>
     'lt'    => 'Lithuanian',
     'no'    => 'Norwegian',
     'pl'    => 'Polish',
-    'pr-BR' => 'Portuguese (Brazilian)',
-    'pt-PT' => 'Portuguese (Portugal)',
+    'pr_BR' => 'Portuguese (Brazilian)',
+    'pt_PT' => 'Portuguese (Portugal)',
     'ro'    => 'Romanian',
     'ru'    => 'Russian',
     'sr'    => 'Serbian',
@@ -161,14 +161,14 @@ change unexpectedly until it graduates.
     | ar    | Arabic                       | 
     | bg    | Bulgarian                    |
     | ca    | Catalan                      |  
-    | zh-TW | Traditional Chinese (Taiwan) |
-    | zh-CN | Simplified Chinese           |
+    | zh_TW | Traditional Chinese (Taiwan) |
+    | zh_CN | Simplified Chinese           |
     | fr    | Croatian                     |
     | cs    | Czech                        |
     | da    | Danish                       |
     | nl    | Dutch                        |
-    | en-US | English                      |
-    | en-GB | English UK                   |
+    | en_US | English                      |
+    | en_GB | English UK                   |
     | fil   | Filipino                     |
     | fi    | Finnish                      |
     | fr    | French                       |
@@ -185,8 +185,8 @@ change unexpectedly until it graduates.
     | lt    | Lithuanian                   |
     | no    | Norwegian                    |
     | pl    | Polish                       |
-    | pr-BR | Portuguese (Brazilian)       |
-    | pt-PT | Portuguese (Portugal)        | 
+    | pr_BR | Portuguese (Brazilian)       |
+    | pt_PT | Portuguese (Portugal)        | 
     | ro    | Romanian                     |
     | ru    | Russian                      |
     | sr    | Serbian                      |
@@ -558,7 +558,11 @@ sub _get_url
     my $self  = shift;
     my $param = shift;
     
-    my $url = sprintf("%s?key=%s&prettyprint=%s", $BASE_URL, $self->api_key, $self->prettyprint);
+    my $url = sprintf("%s?key=%s&prettyprint=%s&url=%s", 
+        $BASE_URL, 
+        $self->api_key, 
+        $self->prettyprint, 
+        $param->{url});
     $param->{locale}   = $DEFAULT_LOCALE   unless exists $param->{locale};
     $param->{strategy} = $DEFAULT_STRATEGY unless exists $param->{strategy};
     $url .= sprintf("&strategy=%s", $param->{strategy});
