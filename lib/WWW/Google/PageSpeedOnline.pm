@@ -1,13 +1,13 @@
 package WWW::Google::PageSpeedOnline;
 
-$WWW::Google::PageSpeedOnline::VERSION = '0.09';
+$WWW::Google::PageSpeedOnline::VERSION = '0.10';
 
 use 5.006;
 use JSON;
 use Data::Dumper;
 
 use WWW::Google::UserAgent;
-use WWW::Google::DataTypes qw($TrueOrFalse);
+use WWW::Google::UserAgent::DataTypes qw($TrueOrFalse);
 use WWW::Google::PageSpeedOnline::Params qw(validate $Strategy $Locale $FIELDS);
 use WWW::Google::PageSpeedOnline::Stats;
 use WWW::Google::PageSpeedOnline::Advise;
@@ -24,7 +24,7 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 

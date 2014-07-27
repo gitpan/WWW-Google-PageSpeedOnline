@@ -14,17 +14,17 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 6bbdbfe8be07e9b58c8c6646663766c0f134890b Changes
+SHA1 c93b317275958de76dbec2d28474f77ccc4ea16d Changes
 SHA1 7d2eacff39bf2db55c456ce144f8769859558d6a MANIFEST
 SHA1 5f29cdcbfacb9c46ac155fff9844aceeb064aef1 MANIFEST.SKIP
-SHA1 bb0e97f0fc5bdedd7805e722d33e5f6fcd69b4c3 Makefile.PL
+SHA1 edc133b2401a922d1c12e1053f1f653f111b7456 Makefile.PL
 SHA1 cd561c674b0349bacda740b20e364b02a3173784 README
-SHA1 281197b50e2b90b3f3102f823faf9134f9cea1c4 lib/WWW/Google/PageSpeedOnline.pm
-SHA1 d51cc949392184d601a3a47878d1f0ca37b6a513 lib/WWW/Google/PageSpeedOnline/Advise.pm
-SHA1 294afa83380ac729b3d1cfc96103fb573a947ba7 lib/WWW/Google/PageSpeedOnline/Params.pm
-SHA1 1bdfa07ddf509b5cbd7081fbf80aba6237b91817 lib/WWW/Google/PageSpeedOnline/Result.pm
-SHA1 b8841bab906f1436334609ed72ccee82e84b3880 lib/WWW/Google/PageSpeedOnline/Result/Rule.pm
-SHA1 a67eeee01d1f43db0306aee779205d807bfceb13 lib/WWW/Google/PageSpeedOnline/Stats.pm
+SHA1 dee42c02213c8503017e5ed4a646d48b898765c2 lib/WWW/Google/PageSpeedOnline.pm
+SHA1 7374ce98cc7fcbe256a9128cb8dd8601490c91c8 lib/WWW/Google/PageSpeedOnline/Advise.pm
+SHA1 bd2e2872d04a48339acb3fc7705cae737059af3c lib/WWW/Google/PageSpeedOnline/Params.pm
+SHA1 0e8dadac518080b7da2ac13b1f2dae4fa07d27a9 lib/WWW/Google/PageSpeedOnline/Result.pm
+SHA1 512e622c7743336efabd4ddabfec45a9cf61b1e5 lib/WWW/Google/PageSpeedOnline/Result/Rule.pm
+SHA1 45d292974c34ddbb8236bbd094caeffb2f773276 lib/WWW/Google/PageSpeedOnline/Stats.pm
 SHA1 b654c1bc04289bd7ec90e5b7b05fec190842a1bf t/00-load.t
 SHA1 7afc22396f719f41eb6818a3af51c453da0cfab8 t/01-unit-test.t
 SHA1 3e86d3e277d4233e55b8a4555bf6edf2dcdf7bd0 t/manifest.t
@@ -32,11 +32,11 @@ SHA1 a572bbed348e70b106f01fa02fee8b8edd6735d5 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJT1MC4AAoJENoXJXWo7C/pGkQH/juoFTTx34v/cGFQ5tZKYL1u
-I+ysDLFsGtC4RfISxEUQK/fGLjMn0IM9T/F+atz0BmVXp9MksbxYyq8GYCP+YY3n
-pva0mEMFjq0EtIkHKY5TRLHC4SXFR+TAFVUeGaSAGEzHDcDvhFzDNvO0CmCd2xGm
-60Xg2M9lVal8ep8jNRTGRM0YSPi/8Vr2Adf5hPnfaFvb283zYuVk0liG7Qbt1LP1
-1h1rbWKjmcKnrKI50kzBierlIEdJ7aiaRQjuDgFXY2q8m7bcg9uxwnVva1q50COc
-oHIJsb5ZSvIqU/NYA6a0e1mVvkJRebuJbSDxDjLmlixymS5e0tm3iMB4tlC2L40=
-=Styf
+iQEcBAEBAgAGBQJT1NgsAAoJENoXJXWo7C/pNPwH/j577w697B+lWTjrpjZaKlFQ
+kwGGqafnAza6kzbnqhM/LSVUu1LffMLO88eVpE8z9q38HvBcuxvBg4KChFelLPGe
+VO7/eIydsJwyusSKSEqjrSI8mFQwIZ9NjQNc/xgCgtM13R0ZO9VGVAYjNkEy6GqE
+r7gF8+1beSAvj6NMwxnD6jcaY5qsX2CKLXlCax3gC48GISY4jCrWM7s6OVi1tFS4
+yz0YzTbJ+hs1oNYUIKwVEMlsxvOUNhy38jajRGbvaeaAjgBP8De4HGNoFpHpIIUu
+wTqi3M8IRcQLCqa6V3oXRDaFRsW0gmSvCdTCv8X5riqKbFqwIdqZpE1ixJ6xFHY=
+=FjlU
 -----END PGP SIGNATURE-----

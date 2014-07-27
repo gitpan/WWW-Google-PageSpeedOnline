@@ -1,5 +1,9 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.10    Sun Jul 27 11:30:20 2014
+        - Made use of WWW::Google::UserAgent v0.02
+        - Deleted Build.PL
+
 0.09    Sun Jul 27 05:10:29 2014
         - Complete re-structured the code using Moo.
         - Present the result in object format.

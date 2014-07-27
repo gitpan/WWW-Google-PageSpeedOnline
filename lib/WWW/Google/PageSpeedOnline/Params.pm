@@ -1,6 +1,6 @@
 package WWW::Google::PageSpeedOnline::Params;
 
-$WWW::Google::PageSpeedOnline::Params::VERSION = '0.09';
+$WWW::Google::PageSpeedOnline::Params::VERSION = '0.10';
 
 use 5.006;
 use strict; use warnings;
@@ -18,7 +18,7 @@ WWW::Google::PageSpeedOnline::Params - Placeholder for parameters for WWW::Googl
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 
