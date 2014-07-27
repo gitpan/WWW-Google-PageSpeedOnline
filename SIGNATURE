@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,26 +14,29 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 db7a4434d6fb9dec959fcb450678157606f2b465 Build.PL
-SHA1 315183db0f1b1acb50414b6929bf78cade3f2a97 Changes
-SHA1 9d4a1994a13d48517bfba3d2a53d48e23a412979 MANIFEST
-SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 4a56ce68423c249b084640da7ffa1d4121d2d840 META.yml
-SHA1 8926c659f53b6a2ef9e4091843a84f63cbf7d062 Makefile.PL
-SHA1 5a53927add9ee1745af9ace2b0d06d3863abcbf0 README
-SHA1 3d80af910f21ffc2b0a9698c3eae1ea18cee6f88 lib/WWW/Google/PageSpeedOnline.pm
-SHA1 c079e26afc3326e127eb15d044bac5ad8c169b78 t/00-load.t
-SHA1 e60c8879da30021331b28f5d7f9c3f0d1f4a0499 t/01-unit-test.t
-SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
-SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
+SHA1 6bbdbfe8be07e9b58c8c6646663766c0f134890b Changes
+SHA1 7d2eacff39bf2db55c456ce144f8769859558d6a MANIFEST
+SHA1 5f29cdcbfacb9c46ac155fff9844aceeb064aef1 MANIFEST.SKIP
+SHA1 bb0e97f0fc5bdedd7805e722d33e5f6fcd69b4c3 Makefile.PL
+SHA1 cd561c674b0349bacda740b20e364b02a3173784 README
+SHA1 281197b50e2b90b3f3102f823faf9134f9cea1c4 lib/WWW/Google/PageSpeedOnline.pm
+SHA1 d51cc949392184d601a3a47878d1f0ca37b6a513 lib/WWW/Google/PageSpeedOnline/Advise.pm
+SHA1 294afa83380ac729b3d1cfc96103fb573a947ba7 lib/WWW/Google/PageSpeedOnline/Params.pm
+SHA1 1bdfa07ddf509b5cbd7081fbf80aba6237b91817 lib/WWW/Google/PageSpeedOnline/Result.pm
+SHA1 b8841bab906f1436334609ed72ccee82e84b3880 lib/WWW/Google/PageSpeedOnline/Result/Rule.pm
+SHA1 a67eeee01d1f43db0306aee779205d807bfceb13 lib/WWW/Google/PageSpeedOnline/Stats.pm
+SHA1 b654c1bc04289bd7ec90e5b7b05fec190842a1bf t/00-load.t
+SHA1 7afc22396f719f41eb6818a3af51c453da0cfab8 t/01-unit-test.t
+SHA1 3e86d3e277d4233e55b8a4555bf6edf2dcdf7bd0 t/manifest.t
+SHA1 a572bbed348e70b106f01fa02fee8b8edd6735d5 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v2.0.14 (MingW32)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJOS4J5AAoJEPYcXBXhRYOhjywIAKZtDVbAvi5hYrtUebKaZ8f3
-5dmB1rXc0101PppUGuthDEB3LC8MpJ9SXN1Z6RL6nJCCBgq8vIfOVLw73YaeBGwy
-Kv9mGjDwXQUWqbYWE7/bAAqZ300QZiCab/Sv5WKRKpnlCGg9F+1Z9xB+2VOIagIO
-qgDZ2KrA3qgE1jLGgPsjDDsfVwdjKlAHo8MTLD5a1eyR3pOR4Qa6chjdeQOuf2F5
-SxGdcWawrB3t+6kCE2tvJGV4cTGtbvbdyw+Fo4p6+/t0MfamMiBDy3IC2HiTMfiT
-qGulfBbfcSWE+mQ/E+SYMnXXs/PPI2Vw+95tlxVUQLDL+ZcpSa/b2IMg4fR6NA8=
-=o+qW
+iQEcBAEBAgAGBQJT1MC4AAoJENoXJXWo7C/pGkQH/juoFTTx34v/cGFQ5tZKYL1u
+I+ysDLFsGtC4RfISxEUQK/fGLjMn0IM9T/F+atz0BmVXp9MksbxYyq8GYCP+YY3n
+pva0mEMFjq0EtIkHKY5TRLHC4SXFR+TAFVUeGaSAGEzHDcDvhFzDNvO0CmCd2xGm
+60Xg2M9lVal8ep8jNRTGRM0YSPi/8Vr2Adf5hPnfaFvb283zYuVk0liG7Qbt1LP1
+1h1rbWKjmcKnrKI50kzBierlIEdJ7aiaRQjuDgFXY2q8m7bcg9uxwnVva1q50COc
+oHIJsb5ZSvIqU/NYA6a0e1mVvkJRebuJbSDxDjLmlixymS5e0tm3iMB4tlC2L40=
+=Styf
 -----END PGP SIGNATURE-----

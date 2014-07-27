@@ -1,5 +1,9 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.09    Sun Jul 27 05:10:29 2014
+        - Complete re-structured the code using Moo.
+        - Present the result in object format.
+
 0.08    Wed Aug 17 09:53:11 2011
         - Fixed method _get_url() to add URL.
         - Fixed the typo in the default locale and others in the list of all

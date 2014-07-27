@@ -2,43 +2,62 @@
 
 use strict; use warnings;
 use WWW::Google::PageSpeedOnline;
-use Test::More tests => 9;
-    
+use Test::More tests => 8;
+
 my ($api_key, $page, $title);
 $api_key = 'Your_API_Key';
 
-eval { $page = WWW::Google::PageSpeedOnline->new(); };
-like($@, qr/Attribute \(api_key\) is required/);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new();
+};
+like($@, qr/Missing required arguments: api_key/);
 
-$page = WWW::Google::PageSpeedOnline->new($api_key);
-eval { $page->process(); };
-like($@, qr/ERROR: Missing input param./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process(url => 'http://localhost');
+};
+like($@, qr/ERROR: Parameters have to be hash ref/);
 
-eval { $page->process(url => 'http://localhost'); };
-like($@, qr/ERROR: Input param has to be a ref to HASH./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process({ strategy => 'desktop' });
+};
+like($@, qr/ERROR: Missing mandatory param: url/);
 
-eval { $page->process({ulr => 'http://localhost'}); };
-like($@, qr/ERROR: Missing key 'url'./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process({url => 'http:localhost' });
+};
+like($@, qr/ERROR: Invalid data type 'url'/);
 
-eval { $page->process({url => 'http:localhost'}); };
-like($@, qr/ERROR: Invalid value for key 'url': \[http:localhost\]./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process({url      => 'http://code.google.com/speed/page-speed/',
+                    strategy => 'deesktop'});
+};
+like($@, qr/ERROR: Invalid data type 'strategy' found/);
 
-eval { $page->process({url      => 'http://code.google.com/speed/page-speed/', 
-                       strategy => 'deesktop'}); };
-like($@, qr/ERROR: Invalid value for key 'strategy': \[deesktop\]./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process({url      => 'http://code.google.com/speed/page-speed/',
+                    strategy => 'desktop',
+                    rule     => 'XYZ'});
+};
+like($@, qr/ERROR: 'Rules' should be passed in as arrayref/);
 
-eval { $page->process({url      => 'http://code.google.com/speed/page-speed/', 
-                       strategy => 'desktop',
-                       rule     => 'XYZ'}); };
-like($@, qr/ERROR: Key 'rule' has to be a ref to ARRAY./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process({url      => 'http://code.google.com/speed/page-speed/',
+                    strategy => 'desktop',
+                    rule     => ['XYZ']});
+};
+like($@, qr/ERROR: Invalid 'rule' found \[XYZ\]/);
 
-eval { $page->process({url      => 'http://code.google.com/speed/page-speed/', 
-                       strategy => 'desktop',
-                       rule     => ['XYZ']}); };
-like($@, qr/ERROR: Invalid value for key 'rule': \[XYZ\]./);
-
-eval { $page->process({url      => 'http://code.google.com/speed/page-speed/', 
-                       strategy => 'desktop',
-                       rule     => ['AvoidCssImport'],
-                       temp     => 1}); };
-like($@, qr/ERROR: Invalid number of keys found in the param hash./);
+eval {
+    $page = WWW::Google::PageSpeedOnline->new({ api_key => $api_key });
+    $page->process({url      => 'http://code.google.com/speed/page-speed/',
+                    strategy => 'desktop',
+                    rule     => ['AvoidCssImport'],
+                    temp     => 1});
+};
+like($@, qr/ERROR: Received invalid param: temp/);
