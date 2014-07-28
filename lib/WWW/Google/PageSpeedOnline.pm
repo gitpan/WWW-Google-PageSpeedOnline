@@ -1,6 +1,6 @@
 package WWW::Google::PageSpeedOnline;
 
-$WWW::Google::PageSpeedOnline::VERSION = '0.10';
+$WWW::Google::PageSpeedOnline::VERSION = '0.11';
 
 use 5.006;
 use JSON;
@@ -24,7 +24,7 @@ WWW::Google::PageSpeedOnline - Interface to Google Page Speed Online API.
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =cut
 

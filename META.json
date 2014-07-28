@@ -34,12 +34,12 @@
          "requires" : {
             "JSON" : "0",
             "Moo" : "0",
-            "WWW::Google::UserAgent" : "0.02",
+            "WWW::Google::UserAgent" : "0.03",
             "namespace::clean" : "0",
             "perl" : "5.006"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.10"
+   "version" : "0.11"
 }

@@ -1,6 +1,6 @@
 package WWW::Google::PageSpeedOnline::Result::Rule;
 
-$WWW::Google::PageSpeedOnline::Result::Rule::VERSION = '0.10';
+$WWW::Google::PageSpeedOnline::Result::Rule::VERSION = '0.11';
 
 use 5.006;
 
@@ -13,7 +13,7 @@ WWW::Google::PageSpeedOnline::Result::Rule - Placeholder for the result rule of 
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =cut
 

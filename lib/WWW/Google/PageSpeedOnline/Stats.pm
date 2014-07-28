@@ -1,6 +1,6 @@
 package WWW::Google::PageSpeedOnline::Stats;
 
-$WWW::Google::PageSpeedOnline::Stats::VERSION = '0.10';
+$WWW::Google::PageSpeedOnline::Stats::VERSION = '0.11';
 
 use 5.006;
 
@@ -13,7 +13,7 @@ WWW::Google::PageSpeedOnline::Stats - Placeholder for the stat of WWW::Google::P
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =cut
 
