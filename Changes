@@ -1,5 +1,8 @@
 Revision history for WWW-Google-PageSpeedOnline
 
+0.13    Tue Jul 29 15:34:10 2014
+        - Updated Makefile.PL to make pre-requisite WWW::Google::UserAgent v0.07
+
 0.12    Tue Jul 29 00:32:00 2014
         - Updated Makefile.PL to make pre-requisite WWW::Google::UserAgent v0.06
 
