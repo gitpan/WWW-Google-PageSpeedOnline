@@ -1,6 +1,6 @@
 package WWW::Google::PageSpeedOnline::Stats;
 
-$WWW::Google::PageSpeedOnline::Stats::VERSION = '0.13';
+$WWW::Google::PageSpeedOnline::Stats::VERSION = '0.14';
 
 use 5.006;
 
@@ -13,7 +13,7 @@ WWW::Google::PageSpeedOnline::Stats - Placeholder for the stat of WWW::Google::P
 
 =head1 VERSION
 
-Version 0.13
+Version 0.14
 
 =cut
 
@@ -74,6 +74,10 @@ Returns the number resources.
 
 Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
+=head1 REPOSITORY
+
+L<https://github.com/Manwar/WWW-Google-PageSpeedOnline>
+
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-www-google-pagespeedonline at
@@ -111,7 +115,7 @@ L<http://search.cpan.org/dist/WWW-Google-PageSpeedOnline/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2014 Mohammad S Anwar.
+Copyright 2011 - 2014 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full

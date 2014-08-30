@@ -19,27 +19,13 @@
          "inc"
       ]
    },
-   "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::More" : "0"
-         }
-      },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
-      "runtime" : {
-         "requires" : {
-            "JSON" : "0",
-            "Moo" : "0",
-            "WWW::Google::UserAgent" : "0.07",
-            "namespace::clean" : "0",
-            "perl" : "5.006"
-         }
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/Manwar/WWW-Google-PageSpeedOnline.git",
+         "web" : "https://github.com/Manwar/WWW-Google-PageSpeedOnline"
       }
    },
-   "release_status" : "stable",
-   "version" : "0.13"
+   "version" : "0.14"
 }

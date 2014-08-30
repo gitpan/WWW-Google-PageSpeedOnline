@@ -1,6 +1,6 @@
 package WWW::Google::PageSpeedOnline::Result;
 
-$WWW::Google::PageSpeedOnline::Result::VERSION = '0.13';
+$WWW::Google::PageSpeedOnline::Result::VERSION = '0.14';
 
 use 5.006;
 
@@ -13,7 +13,7 @@ WWW::Google::PageSpeedOnline::Result - Placeholder for the result of WWW::Google
 
 =head1 VERSION
 
-Version 0.13
+Version 0.14
 
 =cut
 
@@ -43,6 +43,10 @@ Returns the reference to the list of L<WWW::Google::PageSpeedOnline::Result::Rul
 =head1 AUTHOR
 
 Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
+
+=head1 REPOSITORY
+
+L<https://github.com/Manwar/WWW-Google-PageSpeedOnline>
 
 =head1 BUGS
 
@@ -81,7 +85,7 @@ L<http://search.cpan.org/dist/WWW-Google-PageSpeedOnline/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2014 Mohammad S Anwar.
+Copyright 2011 - 2014 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
